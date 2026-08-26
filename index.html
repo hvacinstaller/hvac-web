@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вентиляція та Кондиціонери | Проект, Продаж, Монтаж, Сервіс</title>
+    <meta name="description"
+        content="Професійне проектування, продаж, монтаж та сервісне обслуговування систем вентиляції та кондиціонування в Києві.">
+
+    <!-- Open Graph (превʼю при шарингу в соцмережах і месенджерах) -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="uk_UA">
+    <meta property="og:site_name" content="NEWVENT">
+    <meta property="og:title" content="Вентиляція та Кондиціонери | Проект, Продаж, Монтаж, Сервіс">
+    <meta property="og:description"
+        content="Професійне проектування, продаж, монтаж та сервісне обслуговування систем вентиляції та кондиціонування в Києві.">
+    <meta property="og:url" content="https://newvent.com.ua">
+    <meta property="og:image" content="https://newvent.com.ua/images/share-preview.png">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- Якір для повернення наверх -->
+    <div id="top"></div>
+
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container header__container">
+            <a href="#top" class="logo">
+                <img src="images/logo.png" alt="Логотип" class="logo__image">
+            </a>
+
+            <button class="burger-btn" aria-label="Меню">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li><a href="#services" class="nav__link">Послуги</a></li>
+                    <li><a href="#experience" class="nav__link">Досвід</a></li>
+                    <li><a href="#works" class="nav__link">Роботи</a></li>
+                    <li><a href="#contacts" class="nav__link">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__phones">
+                <a href="tel:+380953927019" class="header__phone">095 392 70 19</a>
+                <span class="header__separator">|</span>
+                <a href="tel:+380964836976" class="header__phone">096 483 69 76</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Головний екран (Hero) -->
+    <section class="hero">
+        <div class="hero__overlay"></div>
+        <div class="container hero__container">
+            <div class="hero__lines">
+                <span class="line line--blue hero-animate-line-blue"></span>
+                <span class="line line--yellow hero-animate-line-yellow"></span>
+            </div>
+            <h1 class="hero__title hero-animate-left">ВЕНТИЛЯЦІЯ КОНДИЦІОНЕРИ</h1>
+            <p class="hero__subtitle hero-animate-right">Проект | Продаж | Монтаж | Сервіс</p>
+        </div>
+    </section>
+
+    <!-- Секція "Наші послуги" -->
+    <section id="services" class="section services">
+        <div class="container">
+            <h2 class="section__title">Наші послуги</h2>
+            <div class="services__grid">
+                <article class="service-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/icon-design.svg" alt="Проектування" class="service-card__icon">
+                    <h3 class="service-card__title">Проектування</h3>
+                    <p class="service-card__text">Проектування систем вентиляції: квартир, котеджів, басейнів,
+                        стоматологій, лабораторій, ресторанів, навчальних закладів. Враховуємо потреби замовника з
+                        дотриманням всіх технічних норм.</p>
+                </article>
+
+                <article class="service-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/icon-sale.svg" alt="Продаж" class="service-card__icon">
+                    <h3 class="service-card__title">Продаж кліматичної техніки</h3>
+                    <p class="service-card__text">Великий вибір кондиціонерів, вентиляторів, приточно-витяжних
+                        установок, нагрівачів, теплих підлог, вентвиробів та монтажних елементів. Гнучка система знижок.
+                    </p>
+                </article>
+
+                <article class="service-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/icon-install.svg" alt="Монтаж" class="service-card__icon">
+                    <h3 class="service-card__title">Монтажні роботи</h3>
+                    <p class="service-card__text">Монтаж систем вентиляції та кондиціонування: припливно-витяжних
+                        установок, повітропроводів, повітророзподільних пристроїв, кондиціонерів.</p>
+                </article>
+
+                <article class="service-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/icon-service.svg" alt="Сервіс" class="service-card__icon">
+                    <h3 class="service-card__title">Сервісне обслуговування</h3>
+                    <p class="service-card__text">Технічне обслуговування систем вентиляції та кондиціонування. Сервіс
+                        кондиціонерів, вентиляторів, припливно-витяжних установок. Післягарантійне обслуговування.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Роздільник з паралакс-ефектом -->
+    <section class="divider">
+        <div class="divider__overlay"></div>
+        <div class="container divider__content">
+            <h2 class="divider__title divider-animate-text">Ми</h2>
+            <span class="line line--blue divider-animate-line-blue"></span>
+            <p class="divider__text divider-animate-text">Офіційні представники світових торгових марок кондиціонерів та
+                іншого кліматичного обладнання</p>
+            <span class="line line--yellow divider-animate-line-yellow"></span>
+        </div>
+    </section>
+
+    <!-- Секція "Наш досвід" -->
+    <section id="experience" class="section experience">
+        <div class="container">
+            <h2 class="section__title">Наш досвід</h2>
+            <p class="section__subtitle">Правильно спроектована і змонтована вентиляція — це здоров'я, затишок, комфорт
+            </p>
+
+            <div class="experience__grid">
+                <article class="experience-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/exp-apartments.jpg" alt="Квартири" loading="lazy" class="experience-card__image">
+                    <h3 class="experience-card__title">Квартири, котеджі, басейни</h3>
+                    <p class="experience-card__text">Масштабуємо затишок будинку</p>
+                </article>
+
+                <article class="experience-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/exp-offices.jpg" alt="Офіси" loading="lazy" class="experience-card__image">
+                    <h3 class="experience-card__title">Офіси, конференц-зали</h3>
+                    <p class="experience-card__text">Додаємо продуктивності бізнесу</p>
+                </article>
+
+                <article class="experience-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/exp-restaurants.jpg" alt="Ресторани" loading="lazy" class="experience-card__image">
+                    <h3 class="experience-card__title">Ресторани, кафе, кальянні</h3>
+                    <p class="experience-card__text">Підвищуємо апетит та настрій</p>
+                </article>
+
+                <article class="experience-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/exp-schools.jpg" alt="Навчальні класи" loading="lazy"
+                        class="experience-card__image">
+                    <h3 class="experience-card__title">Навчальні класи, ігрові кімнати</h3>
+                    <p class="experience-card__text">Створюємо здоровий клімат для навчання</p>
+                </article>
+
+                <article class="experience-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/exp-clinics.jpg" alt="Стоматології" loading="lazy" class="experience-card__image">
+                    <h3 class="experience-card__title">Стоматології, лабораторії</h3>
+                    <p class="experience-card__text">Підтримуємо чистоту повітря</p>
+                </article>
+
+                <article class="experience-card animate-on-scroll" data-animation="fade-up">
+                    <img src="images/exp-bakeries.jpg" alt="Пекарні" loading="lazy" class="experience-card__image">
+                    <h3 class="experience-card__title">Пекарні, цеха кулінарії, піцерії</h3>
+                    <p class="experience-card__text">Надихаємо комфортною температурою</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція "Серед наших клієнтів" -->
+    <section id="clients" class="section clients">
+        <div class="container">
+            <h2 class="section__title">Серед наших клієнтів</h2>
+            <div class="clients__grid">
+                <img src="images/client-1.jpg" alt="Клієнт 1" loading="lazy" class="client-logo">
+                <img src="images/client-2.jpg" alt="Клієнт 2" loading="lazy" class="client-logo">
+                <img src="images/client-3.jpg" alt="Клієнт 3" loading="lazy" class="client-logo">
+                <img src="images/client-4.jpg" alt="Клієнт 4" loading="lazy" class="client-logo">
+                <img src="images/client-5.jpg" alt="Клієнт 5" loading="lazy" class="client-logo">
+                <img src="images/client-6.jpg" alt="Клієнт 6" loading="lazy" class="client-logo">
+                <img src="images/client-7.jpg" alt="Клієнт 7" loading="lazy" class="client-logo">
+                <img src="images/client-8.jpg" alt="Клієнт 8" loading="lazy" class="client-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція "Партнери" -->
+    <section class="section partners">
+        <div class="container partners__container">
+            <h2 class="section__title section__title--light">Партнери</h2>
+            <p class="section__subtitle section__subtitle--light">Багаторічний досвід співпраці з лідерами ринку
+                кліматичної техніки і матеріалів дає нам можливість пропонувати нашим клієнтам найкращі ціни</p>
+            <div class="partners__grid">
+                <img src="images/partner-1.png" alt="Партнер 1" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-2.png" alt="Партнер 2" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-3.png" alt="Партнер 3" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-4.png" alt="Партнер 4" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-5.png" alt="Партнер 5" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-6.png" alt="Партнер 6" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-7.png" alt="Партнер 7" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-8.jpg" alt="Партнер 8" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-9.png" alt="Партнер 9" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-10.png" alt="Партнер 10" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-11.png" alt="Партнер 11" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/partner-12.png" alt="Партнер 12" loading="lazy" class="partner-logo animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція "Наші роботи" -->
+    <section id="works" class="section works">
+        <div class="container">
+            <h2 class="section__title">Наші роботи</h2>
+            <div class="works__grid">
+                <img src="images/work-1.jpeg" alt="Робота 1" loading="lazy" class="work-image animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/work-2.jpeg" alt="Робота 2" loading="lazy" class="work-image animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/work-3.jpeg" alt="Робота 3" loading="lazy" class="work-image animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/work-4.jpeg" alt="Робота 4" loading="lazy" class="work-image animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/work-5.jpeg" alt="Робота 5" loading="lazy" class="work-image animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/work-6.jpeg" alt="Робота 6" loading="lazy" class="work-image animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/work-7.jpeg" alt="Робота 7" loading="lazy" class="work-image animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+                <img src="images/work-8.jpeg" alt="Робота 8" loading="lazy" class="work-image animate-on-scroll"
+                    data-animation="fade-in" data-chaotic="true">
+            </div>
+            <div class="works__cta">
+                <a href="https://www.instagram.com/newvent.com.ua/" target="_blank" rel="noopener noreferrer"
+                    class="btn btn--instagram">Більше фото</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Секція "Контакти" з паралакс-ефектом -->
+    <section id="contacts" class="contacts">
+        <div class="contacts__overlay"></div>
+        <div class="container contacts__container">
+            <h2 class="contacts__title">Зворотній зв'язок</h2>
+            <p class="contacts__subtitle">Вийдемо на зв'язок у найближчий час</p>
+
+            <!-- Форма через Formsubmit.co -->
+            <form class="contact-form" id="contactForm" action="https://formsubmit.co/newvent.chant099@silomails.com"
+                method="POST">
+                <!-- Приховані поля для налаштування Formsubmit -->
+                <input type="hidden" name="_subject" value="Нова заявка з сайту NEWVENT!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" style="display:none">
+
+                <input type="text" name="Ім'я" placeholder="Ім'я" class="contact-form__input" required>
+                <input type="tel" name="Телефон" placeholder="Телефон" class="contact-form__input" required>
+
+                <!-- Поле: Тема звернення -->
+                <select name="Тема звернення" class="contact-form__select" required
+                    oninvalid="this.setCustomValidity('Будь ласка, оберіть тему звернення')"
+                    oninput="this.setCustomValidity('')">
+                    <option value="" disabled selected>Оберіть тему звернення</option>
+                    <option value="Вентиляція">Вентиляція</option>
+                    <option value="Кондиціонери">Кондиціонери</option>
+                    <option value="Сервіс та обслуговування">Сервіс та обслуговування</option>
+                </select>
+
+                <button type="submit" class="btn btn--primary" id="submitBtn">Надіслати</button>
+
+                <!-- Повідомлення про успіх/помилку -->
+                <div class="form-message" id="formMessage"></div>
+            </form>
+
+            <div class="contacts__info">
+                <div class="contacts__block">
+                    <h3>Адреса:</h3>
+                    <p>Київ, вул. Бориса Гмирі, буд. 4, офіс 220</p>
+                </div>
+                <div class="contacts__block">
+                    <h3>Телефон:</h3>
+                    <p>
+                        <a href="tel:+380953927019">095 392 70 19</a><br>
+                        <a href="tel:+380964836976">096 483 69 76</a>
+                    </p>
+                </div>
+                <div class="contacts__block">
+                    <h3>Ел. пошта:</h3>
+                    <p><a href="#" class="email-link" data-user="masterpto" data-domain="ukr.net">Показати email</a></p>
+                </div>
+                <div class="contacts__block">
+                    <h3>Графік роботи:</h3>
+                    <p>Пн - Пт 09:00 - 18:00<br>Сб - Нд Вихідний</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; <span id="current-year"></span> NEWVENT. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <!-- Lightbox для перегляду зображень -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
