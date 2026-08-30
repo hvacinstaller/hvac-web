@@ -16,13 +16,24 @@
     <meta property="og:description"
         content="Професійне проектування, продаж, монтаж та сервісне обслуговування систем вентиляції та кондиціонування в Києві.">
     <meta property="og:url" content="https://newvent.com.ua">
-    <meta property="og:image" content="https://newvent.com.ua/images/share-preview.png">
+    <meta property="og:image" content="https://newvent.com.ua/images/hero-bg.png">
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <!-- GOOGLE ANALYTICS -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZW7ZHMGFL9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-ZW7ZHMGFL9');
+    </script>
+    <!-- Кінець GOOGLE ANALYTICS -->
 </head>
 
 <body>
@@ -30,7 +41,7 @@
     <!-- Якір для повернення наверх -->
     <div id="top"></div>
 
-    <!-- Шапка -->
+    <!-- Шапка сайту -->
     <header class="header">
         <div class="container header__container">
             <a href="#top" class="logo">
@@ -171,6 +182,17 @@
         </div>
     </section>
 
+        <!-- Секція "Географія робіт" -->
+    <section class="location">
+        <div class="location__overlay"></div>
+        <div class="container location__content">
+            <h2 class="location__title location-animate-text">
+                Працюємо по Києву<br>
+                <span class="location__subtitle">та всіх містах-супутниках</span>
+            </h2>
+        </div>
+    </section>
+
     <!-- Секція "Серед наших клієнтів" -->
     <section id="clients" class="section clients">
         <div class="container">
@@ -257,7 +279,7 @@
         <div class="contacts__overlay"></div>
         <div class="container contacts__container">
             <h2 class="contacts__title">Зворотній зв'язок</h2>
-            <p class="contacts__subtitle">Вийдемо на зв'язок у найближчий час</p>
+            <p class="contacts__subtitle">Не додзвонилися? Залиште свої контакти прямо тут, і ми вам передзвонимо!</p>
 
             <!-- Форма через Formsubmit.co -->
             <form class="contact-form" id="contactForm" action="https://formsubmit.co/newvent.chant099@silomails.com"
