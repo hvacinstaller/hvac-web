@@ -74,6 +74,23 @@ document.addEventListener('DOMContentLoaded', function() {
         dividerObserver.observe(dividerSection);
     }
 
+        // 3b. АНІМАЦІЯ СЕКЦІЇ LOCATION (ГЕОГРАФІЯ)
+    const locationSection = document.querySelector('.location');
+    const locationTitle = document.querySelector('.location__title');
+
+    if (locationSection && locationTitle) {
+        const locationObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => { locationTitle.classList.add('is-visible'); }, 0);
+                    locationObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        locationObserver.observe(locationSection);
+    }
+
     // 4. LIGHTBOX ДЛЯ ПЕРЕГЛЯДУ ЗОБРАЖЕНЬ
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightbox-img');
@@ -154,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (response.ok) {
                     // Успішна відправка
                     formMessage.className = 'form-message success';
-                    formMessage.textContent = 'Дякуємо! Ваша заявка успішно надіслана. Ми зв\'яжемося з вами у зручний для вас час.';
+                    formMessage.textContent = 'Дякуємо! Ваша заявка успішно надіслана. Ми скоро вийдемо на зв\'язок.';
                     contactForm.reset();
                 } else {
                     // Помилка при відправці
