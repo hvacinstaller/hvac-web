@@ -332,6 +332,63 @@ body {
     max-width: 500px; /* Обмежуємо ширину */
 }
 
+/* 5b. Секція Географія (Location) */
+.location {
+    background-image: url('../images/location-bg.jpg'); /* Картинка секії */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    height: 500px; /* Висота секції */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--color-white);
+}
+
+.location__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Таке саме затемнення, як у роздільнику */
+}
+
+.location__content {
+    position: relative;
+    z-index: 1;
+    max-width: 1032px; /* КЛЮЧОВИЙ МОМЕНТ: та сама ширина, що й у .services__grid, щоб лівий край збігався */
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 var(--spacing-unit);
+}
+
+.location__title {
+    font-size: 2.5rem; /* Розмір першого рядка ("Працюємо по Києву") */
+    max-width: 500px;
+    line-height: 1.3;
+}
+
+.location__subtitle {
+    font-size: 1.5rem; /* Розмір другого рядка ("та всіх містах-супутниках") */
+    font-weight: 400;  /* Робить текст трохи тоншим (легшим) для контрасту */
+}
+
+/* Анімація для цієї секції */
+.location-animate-text {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transition-delay: 0.5s; /* Затримка появи текста */
+}
+
+.location-animate-text.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* 6. Досвід */
 .experience {
     background-color: var(--color-bg-light);
@@ -376,6 +433,9 @@ body {
 /* 7. Клієнти */
 .clients {
     background-color: var(--color-white);
+    min-height: 500px; /* Встановлюємо висоту секції 500px */
+    display: flex;
+    align-items: center; /* Центруємо логотипи по вертикалі */
 }
 
 .clients__grid {
@@ -755,8 +815,17 @@ body {
     .contacts__info { grid-template-columns: 1fr; gap: 30px; }
     .contacts__block { width: 100%; text-align: center; }
     .section__title { font-size: 2rem; }
-    .hero, .divider, .contacts {
+    .hero, .divider, .location, .contacts {
         background-attachment: scroll;
+    }
+    
+    /* Стилі для секції Location на мобільном */
+    .location__title {
+        font-size: 1.8rem;
+    }
+    
+    .location__subtitle {
+        font-size: 1.2rem;
     }
 }
 
