@@ -135,6 +135,30 @@ body {
     color: var(--color-primary);
 }
 
+/* Номери телефонів у бургер-меню (приховані на десктопі) */
+.nav__phones {
+    display: none;
+    padding: 0 20px;
+}
+
+.nav__phone {
+    display: block;
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 700;
+    padding: 16px 0;
+    border-bottom: 1px solid #eee;
+    transition: color 0.3s ease;
+}
+
+.nav__phone:hover {
+    color: var(--color-primary);
+}
+
+.nav__phone:last-child {
+    border-bottom: none;
+}
+
 .header__phones {
     display: flex;
     align-items: center;
@@ -783,15 +807,10 @@ body {
 
 /* 14. Адаптивність */
 @media (max-width: 1024px) {
-    .experience__grid { grid-template-columns: repeat(2, 1fr); }
-    .clients__grid { grid-template-columns: repeat(4, 1fr); }
-    .partners__grid, .works__grid { grid-template-columns: repeat(3, 1fr); }
-    .contacts__info { grid-template-columns: repeat(2, minmax(0, 190px)); }
-    .services__grid { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 768px) {
+    /* Шапка та бургер-меню для планшетів */
     .burger-btn { display: flex; }
+    .header__phones { display: none; }
+    .nav__phones { display: block; }
     .nav {
         position: fixed; top: 0; right: -100%; width: 70%; max-width: 300px;
         height: 100vh; background-color: var(--color-white);
@@ -802,28 +821,34 @@ body {
     .nav__list { flex-direction: column; gap: 0; padding: 20px; }
     .nav__list li { border-bottom: 1px solid #eee; }
     .nav__link { display: block; padding: 16px 0; }
-    .header__phones { display: none; }
     .burger-btn.is-open .burger-line:nth-child(1) { transform: translateY(9px) rotate(45deg); }
     .burger-btn.is-open .burger-line:nth-child(2) { opacity: 0; }
     .burger-btn.is-open .burger-line:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+
+    /* Сітки */
+    .experience__grid { grid-template-columns: repeat(2, 1fr); }
+    .clients__grid { grid-template-columns: repeat(4, 1fr); }
+    .partners__grid, .works__grid { grid-template-columns: repeat(2, 1fr); } /* <-- ЗМІНЕНО з 3 на 2 */
+    .contacts__info { grid-template-columns: repeat(2, minmax(0, 190px)); }
+    .services__grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
     .hero__title { font-size: 2rem; word-break: break-word; }
     .hero__subtitle { font-size: 1rem; }
     .services__grid { grid-template-columns: 1fr; }
     .experience__grid { grid-template-columns: 1fr; }
     .clients__grid { grid-template-columns: repeat(2, 1fr); }
-    .partners__grid, .works__grid { grid-template-columns: repeat(2, 1fr); }
+    /* partners__grid та works__grid вже мають 2 колонки з 1024px, тут нічого не треба */
     .contacts__info { grid-template-columns: 1fr; gap: 30px; }
     .contacts__block { width: 100%; text-align: center; }
     .section__title { font-size: 2rem; }
     .hero, .divider, .location, .contacts {
         background-attachment: scroll;
     }
-    
-    /* Стилі для секції Location на мобільном */
     .location__title {
         font-size: 1.8rem;
     }
-    
     .location__subtitle {
         font-size: 1.2rem;
     }
